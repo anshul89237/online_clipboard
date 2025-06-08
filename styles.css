@@ -1,0 +1,147 @@
+/* Body background with subtle gradient */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+  margin: 0;
+  padding: 0;
+  color: #fff;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding-top: 40px;
+  box-sizing: border-box;
+}
+
+/* Container with soft off-white background and subtle shadow */
+.container {
+  max-width: 800px;
+  background: #fafafa; /* softer off-white */
+  padding: 30px 40px;
+  border-radius: 16px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1);
+  color: #2a2e45;
+}
+
+/* Headings */
+h1 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #1a1d2c; /* softer dark */
+}
+
+/* Labels and form controls styling */
+label {
+  font-weight: 600;
+  display: block;
+  margin-top: 20px;
+  margin-bottom: 8px;
+  color: #3b4261; /* soft navy blue */
+}
+
+textarea,
+input[type="text"] {
+  width: 100%;
+  padding: 14px;
+  font-size: 16px;
+  border: 1.5px solid #ccd6f6; /* subtle blue-gray */
+  border-radius: 10px;
+  box-sizing: border-box;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  color: #333;
+  background-color: #fff; /* white inside */
+  resize: none;
+}
+
+textarea {
+  height: 140px;
+  resize: vertical;
+}
+
+textarea:focus,
+input[type="text"]:focus {
+  border-color: #4a72ff; /* bright blue */
+  outline: none;
+  box-shadow: 0 0 8px rgba(74, 114, 255, 0.4);
+}
+
+/* Buttons */
+button {
+  margin-top: 15px;
+  padding: 14px;
+  width: 100%;
+  font-size: 16px;
+  font-weight: 700;
+  background: linear-gradient(45deg, #4a72ff, #6a11cb);
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  box-shadow: 0 6px 12px rgba(74, 114, 255, 0.5);
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background: linear-gradient(45deg, #6a11cb, #4a72ff);
+}
+
+/* Token display */
+#token-display {
+  font-size: 18px;
+  font-weight: 600;
+  margin-top: 15px;
+  text-align: center;
+  word-break: break-word;
+  color: #4a72ff; /* blue accent */
+}
+
+/* Scrollable retrieved content box */
+.scroll-box {
+  height: 140px;
+  overflow-y: auto;
+  padding: 14px;
+  border: 1.5px solid #ccd6f6;
+  border-radius: 10px;
+  background-color: #fff;
+  font-size: 16px;
+  white-space: pre-wrap;
+  color: #333;
+  margin-top: 8px;
+  box-sizing: border-box;
+  resize: none;
+  user-select: text;
+}
+
+/* About Section */
+.about {
+  margin-top: 40px;
+  line-height: 1.6;
+  color: #2a2e45;
+}
+
+.about h2 {
+  margin-top: 25px;
+  margin-bottom: 10px;
+  font-weight: 700;
+}
+
+.about ol {
+  padding-left: 20px;
+  margin: 10px 0 20px 0;
+  list-style-type: decimal;
+}
+
+.about p {
+  margin-bottom: 15px;
+}
+
+/* Links in about section */
+a {
+  color: #2575fc;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+a:hover {
+  color: #6a11cb;
+}

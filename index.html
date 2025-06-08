@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Online Clipboard</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Online Clipboard</h1>
+
+    <textarea id="text-input" placeholder="Paste your text here..."></textarea>
+    <button onclick="generateToken()">Send to Online Clipboard</button>
+    <p id="token-display"></p>
+
+    <label for="retrieve-id" style="margin-top: 30px;">Retrieve Clipboard by ID:</label>
+    <input type="text" id="retrieve-id" placeholder="Enter your token here..." />
+    <button onclick="retrieveClipboard()">Retrieve Clipboard</button>
+
+    <div id="retrieved-text" class="scroll-box" tabindex="0" aria-live="polite" aria-label="Retrieved clipboard content"></div>
+
+    <section class="about">
+      <h2>📋 What is Online Clipboard?</h2>
+      <p><strong>Online Clipboard</strong> is a simple and secure tool that lets you transfer text or images between devices using a unique token.</p>
+
+      <h2>💡 How It Works</h2>
+      <ol>
+        <li>Type or paste the content you'd like to share into the input box above.</li>
+        <li>Click <strong>Send to Online Clipboard</strong>. A unique token will be generated.</li>
+        <li>Enter that token in the "Retrieve Clipboard" section below to view your content.</li>
+      </ol>
+
+      <h2>🌐 Why Use It?</h2>
+      <p>Unlike traditional clipboards that work only on one device, Online Clipboard bridges the gap between all your devices. No login, no file uploads—just fast, private clipboard sharing with a short token.</p>
+
+      <h2>🔄 Future Plans</h2>
+      <p>We plan to add support for rich-text formatting, image previews, and secure auto-expiry of clips. Feedback is always welcome as we improve your experience!</p>
+    </section>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
