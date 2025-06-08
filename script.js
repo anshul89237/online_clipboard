@@ -1,4 +1,4 @@
-const API_BASE = "http://localhost:8080/api/clip";
+const API_BASE = "https://online-clipboard-backend-i8a8.onrender.com";
 
 async function generateToken() {
   const text = document.getElementById('text-input').value.trim();
